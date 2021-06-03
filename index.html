@@ -1,0 +1,174 @@
+<!DOCTYPE html lang="pt-br"">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charSet="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <title>Netflix</title>
+        <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico"/>
+        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" > </script>
+        <script src="index.js"></script>
+        
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg" id="nav_main"> 
+            <div class="container-fluid"> 
+                <a class="navbar-brand" href="Netflix_Logo.png">
+                     <img src="Netflix_Logo.png" style="width: 200px; height: auto;" />
+                </a> 
+            
+            
+                <div class="collapse navbar-collapse"  id="navbarTogglerDemo01">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#"> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Series</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="filmes" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Filmes</a>
+                        <ul class="dropdown-menu " id="dropdown_inicio">
+                            <li><a class="dropdown-item" href="#">Romançe</a></li>
+                            <li><a class="dropdown-item" href="#">Horror</a></li>
+                            <li><a class="dropdown-item" href="#">Aventura</a></li>
+                            <li><a class="dropdown-item" href="#">Ação</a></li>
+                            <li><a class="dropdown-item" href="#">Drama</a></li>                            
+                        </ul>
+                         
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Documentários</a>
+                    </li>
+                    </ul>
+           
+
+                        <div class="linha" style="position: absolute; right: 0">
+                            <form class="d-flex" >
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                                style="background-color: #121113; width: 300%;" >
+                                
+                                <button class="btn" type="submit" id="search" > 
+                                    <img src="lupa_icon.png"   style="width: 30px; height: auto;" />
+                                </button>
+
+                                
+
+                                <button class="btn navbar-brand" type="submit" id="search" > 
+                                    <img src="bell_icon.png"   style="width: 30px; height: auto; " />
+                                </button>
+
+                                <button class="btn navbar-brand" type="submit" id="search"style="margin-left: -20px" > 
+                                    <img class="rounded-circle image" src="user_icon.png"   style="width: 30px; height: auto;" />
+                                </button>
+                            </form>    
+                        </div>        
+                            
+                        
+                        
+                        
+
+                </div>
+
+           </div>   
+        </nav>
+
+
+        
+
+
+        <div class="container-fluid" id= "filme_principal" style=" display: inline-block;  position: relative;">
+
+            <img src="SnyderCut.jpg" width="100%" height="auto"/>
+            
+            <div style="position: absolute; top: 500px; left: 200px;">
+
+            <p style="font-family: geobold, sans-serif;text-transform: uppercase;font-size: 44px; font-weight: bolder;
+            line-height: 54px; color: #f8fcff"> 
+            LIGA DA JUSTIÇA De Zack Snyder </p>
+
+            <p style=" font-family: geolite, sans-serif;font-size: 14px; font-weight: bolder;
+            color: #f8fcff; width: 60%;"> Impulsionado pela restauração de sua fé na humanidade e inspirado pelo ato altruísta do Superman,
+            Bruce Wayne convoca sua nova aliada Diana Prince para o combate contra um inimigo ainda maior, recém-despertado.
+            Juntos, Batman e Mulher-Maravilha buscam e recrutam com agilidade um time de meta-humanos, 
+            mas mesmo com a formação da liga de heróis sem precedentes, poderá ser tarde demais para 
+            salvar o planeta de um catastrófico ataque.  </p>
+
+
+            <div class="linha" style="position: absolute; left: 0;  ">
+                <button class="btn_transparente"> 
+                    <i class="em em-arrow_forward" aria-role="presentation" aria-label="BLACK RIGHT-POINTING TRIANGLE" ></i>
+                     Assista Agora  </button>
+                <button class="btn_transparente"  > 
+                    <i class="em em-exclamation" aria-role="presentation" aria-label="HEAVY EXCLAMATION MARK SYMBOL" ></i>
+                    Mais Informações </button>
+            </div>
+            
+        </div>
+
+        </div>
+        
+      
+        
+        <div  class="container-fluid" id="carrosel"  >
+
+        <div class="row" >   
+            
+            
+            <div class="col poster_col" >
+            <img src="infinity-war-poster.jpg" alt="1" id="poster1" class="poster" />
+            </div>
+
+            <div  class="col poster_col" >
+            <img src="endgame_poster.jpg" alt="2"  id="poster2" class="poster"/>
+            </div>    
+
+            <div  class="col poster_col" >
+            <img src="mulher-gato-poster.jpg" alt="3" id="poster3" class="poster"  />
+            </div>    
+    
+
+            <div  class="col poster_col" >
+            <img src="capitao-america-guerra-civil.jpg" alt="4" id="poster4" class="poster"  />
+            </div>    
+
+                
+            <div  class="col poster_col" >
+            <img src="batman-vs-superman-poster.jpg" alt="5"  id="poster5" class="poster"/>
+            </div>    
+    
+            <div  class="col poster_col" >
+            <img src="thor-ragnarok-poster.jpg" alt="6"  id="poster6" class="poster"/>
+            </div>
+
+
+            <div  class="col poster_col" >
+            <img src="wonder-woman-poster.jpg" alt="7"  id="poster7" class="poster"/>
+            </div>
+
+
+            <div  class="col poster_col" >
+            <img src="smurfs-poster.jpg" alt="8"  id="poster8" class="poster"/>
+            </div>
+            
+        </div>    
+
+            
+
+
+        </div>
+
+        <button id="right"  style=" position: fixed; z-index: 700;cursor: pointer;  bottom: 120px;
+        left: 2px;"> < </button> 
+        
+        <button id="left"  style=" position: fixed; z-index: 700;cursor: pointer;  bottom: 120px;
+         right: 3px;"> > </button> 
+
+
+    </body>
+</html>
