@@ -64,12 +64,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
      
 
-       for( i =1; i<= 8; i++ ) {
+       for( i =1; i<= 10; i++ ) {
             
         pos = parseInt($("#poster"+i).position().left)
 
 
-        if( pos <= 260){
+        if( pos <= 200){
 
             mover = pos + 50 
 
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
       $("#right").click(function (){
 
-        for( i =1; i<= 8; i++ ) {
+        for( i =1; i<= 10; i++ ) {
              
          pos = parseInt($("#poster"+i).position().left)
 
