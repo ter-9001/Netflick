@@ -78,10 +78,41 @@ select{
 
 .poster_col{
     margin-left: -20px;
+    position: absolute;
+}
+
+.poster:hover{
+    border-color: aqua;
+    border-style: groove;
 }
 
 #dropdown_inicio{
     background-color: rgba(138, 129, 148, 0.5);
   
+}
+
+.filme_descrição{
+    background-color: rgba(138, 129, 148, 0.5);
+    position: absolute;    
+    width: 200px;
+    height: 140px;
+    margin-top: 60px;
+    text-align: left;
+    display: none;
+}
+
+.filme_descrição p{
+    width: 60%;
+    height: auto;
+    text-transform: uppercase;
+    font-family: geobold;
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 4px;
+    color: #121113;
+    font-style: oblique;
+    -webkit-text-stroke-width: 1px; /* largura da borda */
+    
+    
 }
 

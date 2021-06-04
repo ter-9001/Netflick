@@ -22,7 +22,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     dropdown_aparecer++;
   })
 
+   $(".poster_col").mouseover(function(){
 
+       
+    $(this).find(".filme_descrição").fadeIn("slow");   
+    $(this).find(".filme_descrição").css('display','block');
+ 
+   })
+
+
+   $(".poster_col").mouseout(function(){
+
+       
+    $(this).find(".filme_descrição").fadeOut("slow")
+    $(this).find(".filme_descrição").css('display','none');
+    
+  })
   
 
     $("#carrosel").mouseover(function(){
@@ -55,6 +70,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
       $("#left").css("visibility","hidden");
       $("#right").css("visibility","hidden");
 
+      
+      
+
+   })
+
+
+   $("#filme_principal").mouseover(function(){
+    
+    for( i =1; i<= 10; i++ ) {
+              
+     
+            $("#poster"+i).animate({
+              left: "15px"
+            })
+      
+  }
+
+     
    })
 
 
